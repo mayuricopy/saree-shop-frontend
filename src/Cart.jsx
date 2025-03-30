@@ -8,13 +8,14 @@ const Cart = () => {
     <div>
       <h2>Your Cart</h2>
       {cart.length === 0 ? (
-        <p>Your cart is empty</p>
+        <p>Your cart is empty.</p>
       ) : (
-        <ul>
-          {cart.map((item, index) => (
-            <li key={index}>{item.name} - ₹{item.price}</li>
-          ))}
-        </ul>
+        cart.map((item, index) => (
+          <div key={index}>
+            <h3>{item.name}</h3>
+            <p>Price: ₹{item.price}</p>
+          </div>
+        ))
       )}
     </div>
   );

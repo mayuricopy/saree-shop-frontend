@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Cart from "./Cart";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Products from "./Products";
+import Cart from "./Cart";
 import Navbar from "./components/Navbar";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Navbar />
@@ -13,6 +13,7 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
+
